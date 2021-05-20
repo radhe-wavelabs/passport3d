@@ -1,0 +1,33 @@
+.hover-label-btn {
+  span:first-child {
+    display: inline-block;
+  }
+  span:last-child {
+    display: none;
+  }
+  &:hover {
+    span:first-child {
+      display: none;
+    }
+    span:last-child {
+      display: inline-block;
+    }
+  }
+}
+
+.add-remove-btn.common-btn[data-tooltip-position="bottom"]:hover:after {
+  background-color: transparent;
+  opacity: 1;
+  top: 100%;
+  left: 50%;
+  width: auto;
+  height: auto;
+}
+
+.timing-column {
+width: 170px;
+min-width: 170px;
+@media (max-width: 768px) {
+min-width: unset;
+}
+}

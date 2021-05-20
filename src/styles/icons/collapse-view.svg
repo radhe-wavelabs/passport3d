@@ -1,0 +1,23 @@
+<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+ <g class="currentLayer">
+   <rect height="3.75" width="3.75" y="0" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="0" x="4.75" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="0" x="9.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="0" x="14.25" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+
+   <rect height="3.75" width="3.75" y="4.75" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="4.75" x="4.75" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="4.75" x="9.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="4.75" x="14.25" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+
+   <rect height="3.75" width="3.75" y="9.5" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="9.5" x="4.75" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="9.5" x="9.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="9.5" x="14.25" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+
+   <rect height="3.75" width="3.75" y="14.25" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="14.25" x="4.75" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="14.25" x="9.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+   <rect height="3.75" width="3.75" y="14.25" x="14.25" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null"/>
+ </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "REACT_APP_PROFILE": {
+    "passport": {
+      "mapping": {
+        "REACT_APP_USER_POOL_ID": "userPoolId",
+        "REACT_APP_CLIENT_ID": "userPoolWebClientId",
+        "REACT_APP_COGNITO_URL": "endpoint"
+      },
+      "__isPassport": true
+    },
+    "meet": {
+      "__isMeetLinks": true
+    }
+  }
+}
+
+

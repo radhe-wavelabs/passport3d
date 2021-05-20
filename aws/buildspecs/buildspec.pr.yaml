@@ -1,0 +1,48 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install
+
+  pre_build:
+    commands:
+      - npm run lint
+      - export REACT_APP_PROFILE=${PROFILE}
+      - npm run test:ci
+      - npm run test:coverage
+  build:
+    commands:
+      - export REACT_APP_PROFILE=${PROFILE}
+      - export REACT_APP_FE_ENV=${FE_ENV}
+      - export REACT_APP_APP_TITLE=${APP_TITLE}
+      - export REACT_APP_API_ROOT=${API_ROOT}
+      - export REACT_APP_CLIENT_ID=${CLIENT_ID}
+      - export REACT_APP_USER_POOL_ID=${USER_POOL_ID}
+      - export REACT_APP_COGNITO_URL=${COGNITO_URL}
+      - export APP_TITLE_DEFAULT="OpenExchange"
+      - export REACT_APP_TITLE="${APP_TITLE:-$APP_TITLE_DEFAULT}"
+      - npm run build
+
+reports:
+  JestReports:
+    files:
+      - "jest-aws-report.xml"
+    base-directory: "coverage"
+    file-format: "JUNITXML"
+  CloverReports:
+    files:
+      - "clover.xml"
+    base-directory: "coverage"
+    file-format: "CLOVERXML"
+
+cache:
+  paths:
+    - "node_modules/**/*"
+
+artifacts:
+  base-directory: .
+  files:
+    - aws/buildspecs/buildspec.${PROFILE}.env.yaml
+    - "build/**/*"

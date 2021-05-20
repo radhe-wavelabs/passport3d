@@ -1,0 +1,34 @@
+@import '../../styles/palette';
+
+.common-btn {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  &:disabled {
+    cursor: not-allowed;
+    &:after {
+      opacity: 0.6;
+    }
+  }
+  &:hover:not(:disabled):after {
+    opacity: 0.2;
+  }
+  &:hover, &:disabled {
+    outline: none;
+
+    &:after {
+      content: '';
+      background-color: white;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &:focus:not(:disabled) {
+    outline: none;
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "name": "oe-passport-fe",
+  "version": "1.0.0",
+  "description": "OE-PASSPORT-FE APP",
+  "repository": "https://github.com/Knowledgevision/OE-Central-FE-Boilerplate",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "CI=true react-scripts build",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
+    "test": "react-scripts test",
+    "test:ci": "REACT_APP_USER_POOL_ID=us-mock-0_XXyyXXyyy REACT_APP_CLIENT_ID=c_id REACT_APP_COGNITO_URL=cognito_url react-scripts test --watchAll=false --reporters=\"default\" --testResultsProcessor=\"jest-junit\"",
+    "test:coverage": "REACT_APP_USER_POOL_ID=us-mock-0_XXyyXXyyy REACT_APP_CLIENT_ID=c_id REACT_APP_COGNITO_URL=cognito_url react-scripts test --coverage --runInBand --watchAll=false"
+  },
+  "dependencies": {
+    "@types/js-cookie": "2.2.6",
+    "@types/react-modal": "3.10.6",
+    "aws-amplify": "3.3.4",
+    "date-fns": "2.16.1",
+    "date-fns-tz": "1.0.10",
+    "js-cookie": "2.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-modal": "3.11.2",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "5.1.0",
+    "@types/enzyme": "3.10.5",
+    "@types/enzyme-adapter-react-16": "1.0.6",
+    "@types/jest": "26.0.13",
+    "@types/jsdom": "16.2.4",
+    "@types/node": "14.6.2",
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/parser": "4.0.1",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.4",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.0",
+    "jest-junit": "11.1.0",
+    "node-sass": "4.14.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dev-utils": "^10.2.1",
+    "react-scripts": "3.4.3",
+    "swr": "0.3.2",
+    "tailwindcss": "1.8.6",
+    "typescript": "4.0.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 60,
+        "branches": 40,
+        "lines": 60,
+        "functions": 50
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "./src/index.tsx",
+      "./src/config/index.ts",
+      "./src/lib/services/subscriptions/index.ts",
+      "./src/config/overrides/route/index.ts",
+      "./src/config/overrides/swr/index.ts"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./coverage",
+    "outputName": "jest-aws-report.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

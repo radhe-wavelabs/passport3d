@@ -1,0 +1,14 @@
+.agenda-footer-btn {
+  width: 215px;
+  min-width: 215px;
+  display: inline-flex;
+
+  &.common-btn[data-tooltip-position="bottom"]:hover:after {
+    background-color: transparent;
+    opacity: 1;
+    top: 100%;
+    left: 50%;
+    width: auto;
+    height: auto;
+  }
+}
